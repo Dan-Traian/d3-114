@@ -1,0 +1,71 @@
+.panel{
+	position: absolute;
+	width: 40%;
+    
+    height: 18%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	top:80%;
+	left:30%;
+    padding-right:16px;
+    background: $green_dark;
+    border-radius: 1.5rem;
+    border: 1rem solid;
+    border-bottom-color: #121212;
+    border-left-color: #080808;
+    border-right-color: #080808;
+    border-top-color: #020202;
+    box-shadow: 0px 0px 105px -4px rgba(0,0,0,0.75);
+
+    #power{
+    	margin-right: 10px;
+
+    	width: 50px;
+    	height: 50px;
+    	margin-left:10px;
+
+        filter: brightness(0.5) grayscale(.5);
+        border-radius: 8px;
+        border:none;
+    	transition: all .1s ease;
+        outline:0;
+        background-image: url(../media/button.jpg);
+        background-size: 100% 100%;   
+    }
+    #power:hover{
+        cursor:pointer;
+    }
+    #power:focus {outline:0;}
+    .power-on{
+
+        filter: brightness(0.9) grayscale(0)!important;
+    }
+    p{
+        color:$washed_yellow;
+        margin: 0;
+        padding: 0;
+        animation: text-flicker 5s infinite;
+    }
+}
+
+
+@keyframes text-flicker{
+    
+    0%{opacity: 1;}
+    3.6%, 5.2%, 13.34%, 24.6%, 32.6%, 41.8%, 41.4%, 46.5%, 49.3%, 54.6%, 62.7%, 66.6%, 72.3%, 77.2%, 88.1% { opacity: 1}
+    3.8%, 5.4%, 13.54%, 24.8%, 32.8%, 42%, 41.6%, 46.7%, 49.5%, 54.8%, 62.9%, 66.8%, 72.5%, 77.4%, 88.3% { opacity: 0}
+    4%, 5.6%, 13.74%, 25%, 35%, 42.2%, 41.8%, 46.9%, 49.7%, 55%, 63.1%, 67%, 72.7%, 77.6%, 88.5% { opacity: 1}
+    100%{opacity: 1;}
+}
+
+.back__button{
+    position:absolute;
+    top:100px;
+    right:0px;
+    width:50px;
+    height:50px;
+    font-size:50px;
+    color:$green_dark;
+    opacity:0;
+}

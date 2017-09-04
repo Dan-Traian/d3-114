@@ -1,0 +1,86 @@
+$dark_green:#031E11;
+$bright-green: #14fdce;
+
+$yellow:#d6c5a9;
+
+// colors
+
+$white:#fff;
+$green_dark:#212121;
+$shadow_green:#4a4643;
+$washed_green:#9ab8ac;
+$washed_yellow:#d6c5a9;
+$fallout_yellow:#F9A212;
+
+
+$ease-out-quint:cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$ease-in-quint:cubic-bezier(0.755, 0.050, 0.855, 0.060);
+$screen-background:#121010;
+
+
+
+//nier color:
+$bgr-light:#c2bda9;
+$bgr-grey:#aaa592;
+$bgr-dark:#636052;
+
+
+
+.flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+// fonts
+
+@font-face {
+  font-family: "Portico-Vintage";
+  src: url('../fonts/Portico_Vintage.otf');
+}
+@font-face {
+  font-family: "Portico-Rough";
+  src: url('../fonts/Portico_Rough.otf');
+}
+
+@keyframes flicker{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      opacity:random();
+    }
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){}
+
+//z-index
+
+// mobile__fallbaclk :15
+// preloader : 14
+//body : 0
+// instructions: 13
+// widget: 13
+
+
+   // INITIALISING SENSORS...<BR>
+   //  SENSORS SUCCESFULLY INITIALISED<BR>
+   //  PREPARING TO BOOT SYSTEM<BR>
+   //  SEARCHING FOR BOOT SEQUENCE<BR>
+   //  BOOT SEQUENCE FOUND<BR>
+   //  BOOTING SYSTEM<BR>
+   //  SYSTEM SUCCESFULLY BOOTED<BR>
+   //  PREPARING USER INTERFACE<BR>
+   //  COPYING FILES<BR>
+   //  LOADING FILES<BR>
+   //  PREPARING USER LOGINV
+   //  ENTER PASSWORD: ********V
+   //  LOGGIN IN...V
+   //  SUCCESFULLY LOGGED INV
+   //  YOU WILL BE REDIRECTED TO MAIN USER INTERFACE IN 3 SECONDS<BR>
