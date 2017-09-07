@@ -12,47 +12,124 @@
   src: url("../fonts/Portico_Rough.otf"); }
 @keyframes flicker {
   0% {
-    opacity: 0.99856; }
+    opacity: 0.04564; }
   5% {
-    opacity: 0.02177; }
+    opacity: 0.44114; }
   10% {
-    opacity: 0.2195; }
+    opacity: 0.67019; }
   15% {
-    opacity: 0.18771; }
+    opacity: 0.24966; }
   20% {
-    opacity: 0.86002; }
+    opacity: 0.28228; }
   25% {
-    opacity: 0.81124; }
+    opacity: 0.97338; }
   30% {
-    opacity: 0.352; }
+    opacity: 0.7231; }
   35% {
-    opacity: 0.35265; }
+    opacity: 0.25056; }
   40% {
-    opacity: 0.29296; }
+    opacity: 0.67185; }
   45% {
-    opacity: 0.39587; }
+    opacity: 0.77881; }
   50% {
-    opacity: 0.47093; }
+    opacity: 0.68915; }
   55% {
-    opacity: 0.36895; }
+    opacity: 0.91108; }
   60% {
-    opacity: 0.46142; }
+    opacity: 0.5836; }
   65% {
-    opacity: 0.98055; }
+    opacity: 0.58212; }
   70% {
-    opacity: 0.40848; }
+    opacity: 0.4272; }
   75% {
-    opacity: 0.57288; }
+    opacity: 0.81059; }
   80% {
-    opacity: 0.31366; }
+    opacity: 0.19507; }
   85% {
-    opacity: 0.56532; }
+    opacity: 0.52136; }
   90% {
-    opacity: 0.93038; }
+    opacity: 0.35248; }
   95% {
-    opacity: 0.18974; }
+    opacity: 0.50937; }
   100% {
-    opacity: 0.10149; } }
+    opacity: 0.69778; } }
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 0;
+  background: #3c3c3c;
+  background-image: url(../media/stardust.png);
+  background-repeat: repeat;
+  color: #d6c5a9;
+  font-family: 'VT323';
+  font-size: 24px;
+  -webkit-font-smoothing: none;
+  line-height: 1.2;
+  position: relative; }
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+h4 {
+  width: 100%;
+  border-bottom: 2px dashed #14fdce; }
+
+p {
+  margin: 0; }
+
+a,
+a:visited {
+  border-bottom: 0.2rem solid #14fdce;
+  color: #14fdce;
+  text-decoration: none; }
+
+a:active,
+a:focus,
+a:hover {
+  background-color: #14fdce;
+  color: #031e11; }
+
+.noclick {
+  pointer-events: none; }
+
+::-moz-selection {
+  background-color: #d6c5a9;
+  color: #031e11; }
+
+::selection {
+  background-color: #14fdce;
+  color: #031e11; }
+
+::-moz-selection {
+  background-color: #14fdce;
+  color: #031e11; }
+
+::selection {
+  background-color: #14fdce;
+  color: #031e11; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #072F1B; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #098068; }
+
 #clock2 {
   width: 100vw;
   height: 100vh;
@@ -134,83 +211,6 @@
 
   #mobile__fallback {
     display: flex; } }
-* {
-  box-sizing: border-box; }
-
-body, html {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  z-index: 0;
-  background: #3c3c3c;
-  background-image: url(../media/stardust.png);
-  background-repeat: repeat;
-  color: #d6c5a9;
-  font-family: 'VT323';
-  font-size: 24px;
-  -webkit-font-smoothing: none;
-  line-height: 1.2;
-  position: relative; }
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase; }
-
-h4 {
-  width: 100%;
-  border-bottom: 2px dashed #14fdce; }
-
-p {
-  margin: 0; }
-
-a,
-a:visited {
-  border-bottom: 0.2rem solid #14fdce;
-  color: #14fdce;
-  text-decoration: none; }
-
-a:active,
-a:focus,
-a:hover {
-  background-color: #14fdce;
-  color: #031e11; }
-
-.noclick {
-  pointer-events: none; }
-
-::-moz-selection {
-  background-color: #d6c5a9;
-  color: #031e11; }
-
-::selection {
-  background-color: #14fdce;
-  color: #031e11; }
-
-::-moz-selection {
-  background-color: #14fdce;
-  color: #031e11; }
-
-::selection {
-  background-color: #14fdce;
-  color: #031e11; }
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #072F1B; }
-
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: transparent; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #098068; }
-
 @keyframes turn-on {
   0% {
     transform: scale(1, 0.8) translate3d(0, 0, 0);

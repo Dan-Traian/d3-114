@@ -1,8 +1,9 @@
 @import '_assets';
-@import 'preloader';
 @import '_general';
-@import 'crt_screen';
-@import 'screen';
-@import 'controls';
-@import 'room';
-@import '_widget';
+@import 'room/preloader';
+@import 'room/crt_screen';
+@import 'room/screen';
+@import 'room/controls';
+@import 'room/room';
+@import 'room/_widget';
+
